@@ -15,7 +15,7 @@ timestamp = date.strftime("%a %b %d, %Y %#I:%M:%S %p")
 
 pygame.init()
 pygame.camera.init()
-cam = pygame.camera.Camera("/dev/video0",(640,480))
+cam = pygame.camera.Camera("/dev/video0",(720,540))
 cam.start()
 image = cam.get_image()
 pygame.image.save(image,'webcam.jpg')
