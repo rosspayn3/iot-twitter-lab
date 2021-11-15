@@ -1,7 +1,7 @@
 # This file is intended to be run when sensors are not connected, 
 # or when running in an environment without the RPi.GPIO library. 
-# It generates random numbers to represent sensor data, and there
-# is no button functionality.
+# It uses a file that generates random numbers to represent sensor 
+# data, and there is no button functionality.
 
 import cherrypy
 import time
@@ -72,7 +72,7 @@ def fakealert():
 class HomeMonitor(object):
     @cherrypy.expose
     def index(self):
-        return open("dashboard.html").read()
+        return open("dashboard-demo.html").read()
 
     @cherrypy.expose
     def demo(self):
