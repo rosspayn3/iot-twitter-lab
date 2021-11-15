@@ -1,6 +1,7 @@
 # CS 4363: Internet of Things Developement
 ### Lab 4: Tweet Intruder
-#### This lab is an extension of Problem Set 2
+
+This lab is an extension of Problem Set 2.
 
 ### Libraries used in `home-monitor.py`:
 1. `cherrypy` - A web framework for Python that can be used to build a functional web server.
