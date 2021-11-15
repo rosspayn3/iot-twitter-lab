@@ -1,3 +1,8 @@
+# This file is intended to be run when sensors are not connected, 
+# or when running in an environment without the RPi.GPIO library. 
+# It generates random numbers to represent sensor data, and there
+# is no button functionality.
+
 import cherrypy
 import time
 import threading
@@ -38,6 +43,7 @@ def fakemonitor():
 def tweet():
     print("🟡 tweeting intruder alert!!!")
     #os.system("python3 twitterbot.py")
+
 
 # def monitor():
 #     while True:
